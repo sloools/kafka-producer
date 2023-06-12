@@ -1,0 +1,19 @@
+server:
+  port: 10011
+
+spring:
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+  kafka:
+#    security:
+#      protocol: "SSL"
+    bootstrap-servers:
+#   producer, consumer brocker가 각각 다를 때 아래처럼 개별로 설정 가능
+#    producer:
+#      bootstrap-servers:
+#    consumer:
+#      bootstrap-servers: localhost:9092
